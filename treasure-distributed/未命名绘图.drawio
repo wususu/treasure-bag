@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-12-10T20:04:36.770Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.67 Safari/537.36" etag="GUbMjEysy9W6TuxgOwcS" version="14.0.0" type="github">
+<mxfile host="app.diagrams.net" modified="2020-12-11T07:28:02.006Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.67 Safari/537.36" etag="rdRrDj2tCnVoZQS7gSrm" version="14.0.0" type="github">
   <diagram id="GomO3WjgMz7VMjrqILPV" name="第 1 页">
-    <mxGraphModel dx="490" dy="439" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="653" dy="487" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -10,7 +10,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="E17DkU5pXsKPAnRNRo_R-2" value="获取Flink任务各个Task的反压数据" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="270" y="175" width="120" height="55" as="geometry" />
+          <mxGeometry x="270" y="180" width="120" height="55" as="geometry" />
         </mxCell>
         <mxCell id="E17DkU5pXsKPAnRNRo_R-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="E17DkU5pXsKPAnRNRo_R-3" target="E17DkU5pXsKPAnRNRo_R-2">
           <mxGeometry relative="1" as="geometry" />
@@ -21,12 +21,13 @@
         <mxCell id="E17DkU5pXsKPAnRNRo_R-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="E17DkU5pXsKPAnRNRo_R-4" target="E17DkU5pXsKPAnRNRo_R-2">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="230" y="203" />
+              <mxPoint x="200" y="208" />
+              <mxPoint x="230" y="208" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="E17DkU5pXsKPAnRNRo_R-4" value="Flink任务web入口" style="shape=parallelogram;html=1;strokeWidth=1;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.15000000000000002;" vertex="1" parent="1">
-          <mxGeometry x="110" y="180" width="130" height="50" as="geometry" />
+          <mxGeometry x="100" y="185" width="130" height="50" as="geometry" />
         </mxCell>
         <mxCell id="E17DkU5pXsKPAnRNRo_R-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="E17DkU5pXsKPAnRNRo_R-8" target="E17DkU5pXsKPAnRNRo_R-9">
           <mxGeometry relative="1" as="geometry" />
@@ -59,11 +60,16 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="E17DkU5pXsKPAnRNRo_R-9" value="反应系数是否均衡" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="265" y="345" width="123.75" height="60" as="geometry" />
+        <mxCell id="E17DkU5pXsKPAnRNRo_R-9" value="反压系数是否均衡" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="265" y="340" width="123.75" height="60" as="geometry" />
         </mxCell>
         <mxCell id="E17DkU5pXsKPAnRNRo_R-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="E17DkU5pXsKPAnRNRo_R-15" target="E17DkU5pXsKPAnRNRo_R-19">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="327" y="500" />
+              <mxPoint x="230" y="500" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="E17DkU5pXsKPAnRNRo_R-15" value="检索反压系数高的Task所处节点IP" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="267.34999999999997" y="430" width="119.06" height="60" as="geometry" />
@@ -72,31 +78,32 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="240" y="570" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="152" y="510" />
-              <mxPoint x="230" y="510" />
+              <mxPoint x="152" y="398" />
+              <mxPoint x="152" y="500" />
+              <mxPoint x="230" y="500" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="E17DkU5pXsKPAnRNRo_R-17" value="在执行Flink任务的TaskManager中抽样，获取节点IP" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="100" y="350" width="123.12" height="55" as="geometry" />
+          <mxGeometry x="100" y="342.5" width="123.12" height="55" as="geometry" />
         </mxCell>
         <mxCell id="E17DkU5pXsKPAnRNRo_R-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="E17DkU5pXsKPAnRNRo_R-19" target="E17DkU5pXsKPAnRNRo_R-21">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="E17DkU5pXsKPAnRNRo_R-19" value="触发节点的Agent 进程采集TaskManager的线程转储信息和CPU 负载信息" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;" vertex="1" parent="1">
-          <mxGeometry x="170" y="530" width="120" height="60" as="geometry" />
+          <mxGeometry x="170" y="524.5" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="E17DkU5pXsKPAnRNRo_R-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="E17DkU5pXsKPAnRNRo_R-21" target="E17DkU5pXsKPAnRNRo_R-23">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="E17DkU5pXsKPAnRNRo_R-21" value="Analyzer进程对Agent端采集的信息进行清洗、汇总、归类" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;" vertex="1" parent="1">
-          <mxGeometry x="170" y="620" width="120" height="60" as="geometry" />
+          <mxGeometry x="170" y="600" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="E17DkU5pXsKPAnRNRo_R-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="E17DkU5pXsKPAnRNRo_R-23" target="E17DkU5pXsKPAnRNRo_R-25">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="E17DkU5pXsKPAnRNRo_R-23" value="统计Top10的线程与执行Task线程的CPU负载以及CPU时间信息" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;" vertex="1" parent="1">
-          <mxGeometry x="170" y="700" width="120" height="60" as="geometry" />
+          <mxGeometry x="170" y="680" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="E17DkU5pXsKPAnRNRo_R-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="E17DkU5pXsKPAnRNRo_R-25" target="E17DkU5pXsKPAnRNRo_R-27">
           <mxGeometry relative="1" as="geometry" />
@@ -108,7 +115,7 @@
         </mxCell>
         <mxCell id="E17DkU5pXsKPAnRNRo_R-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="E17DkU5pXsKPAnRNRo_R-25" target="E17DkU5pXsKPAnRNRo_R-32">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="230" y="920" as="targetPoint" />
+            <mxPoint x="230" y="900" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="E17DkU5pXsKPAnRNRo_R-31" value="N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="E17DkU5pXsKPAnRNRo_R-29">
@@ -117,13 +124,13 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="E17DkU5pXsKPAnRNRo_R-25" value="Task执行线程CPU负载是否低于预期阈值" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=1;" vertex="1" parent="1">
-          <mxGeometry x="160" y="780" width="140" height="90" as="geometry" />
+          <mxGeometry x="160" y="760" width="140" height="90" as="geometry" />
         </mxCell>
         <mxCell id="E17DkU5pXsKPAnRNRo_R-27" value="输出统计信息并&lt;br&gt;提示任务性能低下" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;" vertex="1" parent="1">
-          <mxGeometry x="330" y="795" width="100" height="60" as="geometry" />
+          <mxGeometry x="330" y="775" width="100" height="60" as="geometry" />
         </mxCell>
         <mxCell id="E17DkU5pXsKPAnRNRo_R-32" value="输出统计信息" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;" vertex="1" parent="1">
-          <mxGeometry x="170" y="900" width="120" height="50" as="geometry" />
+          <mxGeometry x="180" y="880" width="100" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
